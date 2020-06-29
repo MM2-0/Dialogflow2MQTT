@@ -1,0 +1,38 @@
+{
+  "responseId": "000000",
+  "session": "projects/project-id/agent/sessions/session-id",
+  "queryResult": {
+    "queryText": "End-user expression",
+    "parameters": {
+      "param-name": "param-value"
+    },
+    "allRequiredParamsPresent": true,
+    "fulfillmentText": "Response configured for matched intent",
+    "fulfillmentMessages": [
+      {
+        "text": {
+          "text": [
+            "Response configured for matched intent"
+          ]
+        }
+      }
+    ],
+    "outputContexts": [
+      {
+        "name": "projects/project-id/agent/sessions/session-id/contexts/context-name",
+        "lifespanCount": 5,
+        "parameters": {
+          "param-name": "param-value"
+        }
+      }
+    ],
+    "intent": {
+      "name": "projects/project-id/agent/intents/intent-id",
+      "displayName": "matched-intent-name"
+    },
+    "intentDetectionConfidence": 1,
+    "diagnosticInfo": {},
+    "languageCode": "de"
+  },
+  "originalDetectIntentRequest": {}
+}
