@@ -13,6 +13,7 @@ async function main() {
   app.post('/post', async (req, res) => {
     if (req.header('access_token') !== process.env.ACCESS_TOKEN) {
       res.status(403).send('Access denied')
+      return
     }
 
     const queryResult = req.body.queryResult
